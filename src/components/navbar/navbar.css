@@ -1,0 +1,39 @@
+.hover_link:hover {
+  color: #dc466a;
+}
+
+.cart-badge {
+  position: absolute;
+
+  background: radial-gradient(circle at 30% 30%, #ff99c8, #ff5ca0 70%);
+  font-size: 0.7rem;
+  font-weight: bold;
+  padding: 3px 7px;
+  border-radius: 50%;
+  min-width: 20px;
+  text-align: center;
+  animation: pulse 2s infinite ease-in-out;
+  z-index: 2;
+}
+
+.cart {
+  top: -15px;
+  left: 15px;
+}
+.fav {
+    top: -9px;
+    left: 25px;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 rgba(255, 182, 193, 0.4);
+  }
+  50% {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 182, 193, 0.7);
+  }
+}
+

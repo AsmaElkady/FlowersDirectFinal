@@ -1,0 +1,50 @@
+/* 
+.carddatabg .card,
+.btn-color2 {
+  background: linear-gradient(135deg, #731b46, #903561 , #faecefff) !important;
+  color: #fff !important;
+} */
+/* 
+.productSearch {
+  width: 40% !important;
+  border: 2px solid #398590 !important;
+} */
+/* #lowStock {
+  cursor: pointer;
+} */
+
+/*  styling for orders inputs */
+/* .orders-filters {
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  background: #f8f9fa;
+  box-shadow: 0 2px 6px #faecefff;
+}
+.custom-select {
+  min-width: 180px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  transition: 0.2s ease-in-out;
+}
+
+.custom-select:focus {
+  border-color: #faecefff;
+  box-shadow: 0 0 0 0.2rem #faecefff;
+}
+.custom-input {
+  min-width: 240px;
+  border-radius: 0 8px 8px 0;
+  border: 1px solid #dee2e6;
+  transition: 0.2s ease-in-out;
+}
+
+.custom-input:focus {
+  border-color: #398590;
+  box-shadow: 0 0 0 0.2rem #faecefff;
+}
+.input-group-text {
+  border-radius: 8px 0 0 8px;
+  border: 1px solid #dee2e6;
+  font-size: 0.9rem;
+  color: #6c757d;
+} */

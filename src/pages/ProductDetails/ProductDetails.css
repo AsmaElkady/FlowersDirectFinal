@@ -1,0 +1,37 @@
+.product-section {
+  position: relative;
+  background-color: #f8f9fa;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-title {
+  font-size: 1.8rem;
+  color: #343a40;
+}
+
+.product-desc {
+  font-size: 1.2rem;
+  color: #6c757d;
+}
+
+.product-price {
+  font-size: 1.5rem;
+  color: #28a745;
+}
+
+.flower-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .product-title {
+    font-size: 1.5rem;
+  }
+  .product-price {
+    font-size: 1.2rem;
+  }
+}

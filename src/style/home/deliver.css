@@ -1,0 +1,36 @@
+.deliver {
+    background-image: url("/img/Home/5.png");
+    height: 80vh;
+}
+
+@media (max-width: 768px) {
+
+    .deliver {
+        background-image: url("/img/Home/6.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        height: 80vh;
+    }
+}
+
+.one::before {
+    content: url("/img/Home/9.png");
+    position: relative;
+    top: 14px;
+    margin: 10px;
+}
+
+.two::before {
+    content: url("/img/Home/7.png");
+    position: relative;
+    top: 14px;
+    margin: 10px;
+}
+
+.three::before {
+    content: url("/img/Home/8.png");
+    position: relative;
+    top: 14px;
+    margin: 10px;
+}

@@ -1,0 +1,11 @@
+$primary: #4e0629;
+$secondary: #dc466a;
+$light: #fbeff4;
+
+$theme-colors: (
+  "primary": #4e0629,
+  "secondary": #dc466a,
+  "light": #fbeff4,
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";

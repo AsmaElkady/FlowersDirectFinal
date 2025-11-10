@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   background-color: white !important;
+}
+.wrapper{
+  background-color: white !important;
+}
+.product-section{
+   background-color: white !important;
+}
+.productDetails {
+  
+  width: 100%;
+  height: 100vh;
+}
+
+.flowImg {
+  width: 20%;
+  opacity: 0.8;
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+
+.imageDetails img {
+  width: 25%;
+  /* height: auto; */
+  border-radius: 10px;
+}
+
+.productDetailsWrap {
+  justify-content: space-between;
+  align-items: center;
+}
+.productDetailsWrap > div {
+  flex: 1;
+  padding: 20px;
+}
+.imgWrap {
+  width: clamp(180px, 28vw, 320px);
+
+  aspect-ratio: 3 / 4;
+  border-radius: 120px 120px 0 0;
+  overflow: hidden;
+  display: block;
+  
+
+  max-width: 100%;
+}
+
+.flower-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+}
+
+/* leaf decoration positions */
+.leaf-left {
+  left: 0;
+  bottom: 0;
+  width: 150px;
+  opacity: 0.85;
+}
+.leaf-right {
+  right: 0;
+  top: 0;
+  width: 200px;
+  opacity: 0.85;
+}
+
+/* responsive tweaks */
+@media (max-width: 991px) {
+  .imgWrap {
+    width: clamp(200px, 36vw, 260px);
+    aspect-ratio: 3 / 4;
+  }
+  .leaf-left {
+    width: 110px;
+  }
+  .leaf-right {
+    width: 140px;
+  }
+}
+
+@media (max-width: 767px) {
+  .product-section {
+    padding-bottom: 3rem;
+  }
+  .imgWrap {
+    width: clamp(160px, 48vw, 220px);
+    aspect-ratio: 3 / 4;
+    border-radius: 80px 80px 0 0;
+  }
+
+  .product-section .row {
+    text-align: center;
+  }
+  .product-section .row > [class*="col-"] {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .product-title {
+    font-size: 1.5rem;
+  }
+  .product-desc {
+    font-size: 0.95rem;
+  }
+  .leaf-left {
+    display: none;
+  }
+  .leaf-right {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .imgWrap {
+    width: 180px;
+    height: 230px;
+  }
+  .product-title {
+    font-size: 1.25rem;
+  }
+  .product-price {
+    font-size: 0.95rem;
+  }
+}
+
+/* css for test------------------------------- */
+.product-section {
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}

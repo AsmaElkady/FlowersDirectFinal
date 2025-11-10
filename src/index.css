@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+
+:root {
+  --mainColor: #4e0629;
+}
+
+body {
+  font-family: "DM Serif Display", serif !important;
+  font-weight: 400;
+  font-style: normal;
+
+  color: var(--mainColor) !important;
+    cursor: url("/flower.png"),auto;
+
+}
+
+.border-card {
+  background: linear-gradient(to bottom right, var(--mainColor), #fbeff4);
+}

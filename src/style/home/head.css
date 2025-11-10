@@ -1,0 +1,77 @@
+header {
+    height: 80vh;
+    width: 100%;
+
+    line-height: 50px;
+}
+
+@media (max-width: 768px) {
+    .line::after {
+        content: "";
+        width: 0;
+        height: 0;
+
+
+    }
+
+}
+
+.header-overlay {
+    z-index: 2;
+    pointer-events: auto;
+}
+
+.carousel-container {
+    position: relative;
+    z-index: 0;
+}
+
+.carousel-container img {
+    object-fit: cover;
+}
+
+.carousel {
+    z-index: 1;
+    pointer-events: none;
+}
+
+.headerText {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.507);
+    backdrop-filter: blur(5px);
+}
+
+.headerText {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+.main-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  animation: slideInDown 1.2s ease-in-out;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 25px;
+  animation: fadeInUp 1.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideInDown {
+  from { transform: translateY(-40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

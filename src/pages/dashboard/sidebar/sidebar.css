@@ -1,0 +1,48 @@
+/* 
+#sidebar.collapsed {
+  width: 70px !important;
+  min-width: 70px;
+}
+
+#sidebar.collapsed .sidebar-text {
+  display: none;
+}
+
+#sidebar.collapsed .sidebar-header {
+  justify-content: center;
+}
+
+#sidebar.collapsed img {
+  margin: 0 auto;
+}
+
+#sidebar.collapsed ~ main {
+  flex: 1;
+  max-width: calc(100% - 70px);
+} */
+
+.sidebar {
+  width: 230px;
+  transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+  width: 70px;
+}
+
+/* تصغير الصورة لما ينهار الـ sidebar */
+.sidebar img {
+  width: 100px;
+  height: 50px;
+  transition: all 0.3s ease;
+}
+
+.sidebar.collapsed img {
+display: none;
+}
+
+/* إخفاء النصوص */
+.sidebar.collapsed .sidebar-text {
+  display: none;
+}
+
