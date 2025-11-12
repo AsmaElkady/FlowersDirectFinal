@@ -32,7 +32,7 @@ export default function Cart() {
         <title>Cart</title>
         <link rel="canonical" href="http://mysite.com/cart" />
       </Helmet>
-      <div className="cart-root container py-4 vh-100">
+      <div className="cart-root container py-4" style={cartItems.length >= 3 ? {height: "100vh"}: {height:"64vh"}}>
         <h2 className="cart-title text-center m-5">Your Flower Basket</h2>
         <div className="row g-4">
           <div className="col-lg-8">

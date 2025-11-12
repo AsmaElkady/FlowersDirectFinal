@@ -2,8 +2,11 @@ import Col from "react-bootstrap/esm/Col";
 import Row from "react-bootstrap/esm/Row";
 import "../../style/home/deliver.css";
 import Button from "react-bootstrap/esm/Button";
+import { useNavigate } from "react-router";
 
 export default function Delivered() {
+    const navigation  =  useNavigate()
+
   return (
     <>
       <div className="py-5">
@@ -25,12 +28,16 @@ export default function Delivered() {
               <p className="three text-black">Checkout & receive the flowers</p>
 
               <div className=" d-flex justify-content-end">
-                <Button className=" text-primary bg-light  mx-4 rounded-4">
-                  {" "}
+                <Button
+                  className=" text-primary bg-light  mx-4 rounded-4"
+                  onClick={() => navigation("/products")}
+                >
                   LEARN MORE
                 </Button>
-                <Button className=" bg-primary  rounded-4">
-                  {" "}
+                <Button
+                  className=" bg-primary  rounded-4"
+                  onClick={() => navigation("/products")}
+                >
                   START SHOPPING
                 </Button>
               </div>

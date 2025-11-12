@@ -309,6 +309,21 @@
       "favorites": [],
       "orders": [],
       "id": 2
+    },
+    {
+      "email": "eman@gmail.com",
+      "password": "$2a$10$7TQXzxvovvLcMs9koyY8.eOklfLtOjQIDErOVvQ9DUgO4Ou9BcFi.",
+      "username": "eman@gmail.com",
+      "cart": [
+        {
+          "cartItems": [],
+          "totalQuantity": 0,
+          "totalPrice": 0
+        }
+      ],
+      "favorites": [],
+      "orders": [],
+      "id": 3
     }
   ],
   "orders": []

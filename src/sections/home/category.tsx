@@ -27,7 +27,7 @@ export default function CategoryHome() {
   return (
     <>
       {isLoading ? (
-        <div className="d-flex justify-content-center align-items-center">
+        <div className="d-flex p-5 justify-content-center align-items-center">
           <Spinner animation="border" variant="secondary" />
         </div>
       ) : isError ? (
