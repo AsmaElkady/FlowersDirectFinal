@@ -55,15 +55,15 @@ function EditProductModal({
 
       const updatedProduct = new Product(
         data.name,
-        data.price,
+        data.price!,
         product.image,
         product.desc,
-        data.category,
-        product.color,
+        data.category!,
+        product.color!,
         product.rating ?? 3.5,
         product.isFavorite ?? false,
-        data.totalQuantity,
-        product.id
+        data.totalQuantity!,
+        product.id!
       );
 
       await dispatch(Product.updateProduct(updatedProduct));

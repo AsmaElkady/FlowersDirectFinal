@@ -29,7 +29,7 @@ export default function ProductCard({ product }: Props) {
   const [toastBg, setToastBg] = useState<"danger" | "primary">("primary");
 
   //check admin
-  const user = useSelector((state: RootState) => state.auth.user);
+  const user = useSelector((state: RootState) => state.auth!.user);
   // const { users, status } = useSelector((state: RootState) => state.admin);
   const checkType = Admin.checkAdmin(user?.email ?? "");
 

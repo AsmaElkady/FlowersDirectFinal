@@ -155,7 +155,7 @@ export default function CheckOut() {
                           className="fw-bold ms-2 item-total"
                           style={{ minWidth: 60, textAlign: "right" }}
                         >
-                          {it.price * it.quantity} EGP
+                          {it.price! * it.quantity} EGP
                         </div>
                       </div>
                     ))}

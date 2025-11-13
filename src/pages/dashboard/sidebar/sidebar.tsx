@@ -40,7 +40,6 @@ export default function SidebarDashboard() {
     <>
       <div className="bg-primary">
         <div className="container-fluid py-4 ">
-          {/* <div className="row "> */}
           <aside
             className={` bg-panel d-flex flex-column sidebar ${
               collapsed ? "collapsed" : ""
@@ -54,9 +53,6 @@ export default function SidebarDashboard() {
             >
               <i className="fa-solid fa-bars" />
             </button>
-            {/* <div className="mb-3 text-white d-flex align-items-center">
-                <img src="/img/nav/1.png" alt="icon" />
-              </div> */}
 
             <div className="p-3 rounded mb-3">
               <div className="fw-semibold sidebar-text ">

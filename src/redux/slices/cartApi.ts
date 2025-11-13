@@ -30,7 +30,7 @@ const initialState: CartState = {
 const calcTotals = (cartItems: ICartProduct[]) => {
   const updatedCartItems = cartItems.map((item) => ({
     ...item,
-    total: item.price * item.quantity,
+    total: item.price! * item.quantity,
   }));
 
   const totalQuantity = updatedCartItems.reduce(
