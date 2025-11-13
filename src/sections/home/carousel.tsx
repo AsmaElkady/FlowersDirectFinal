@@ -119,7 +119,6 @@ export default function MultiImageSlider({
 
         <Carousel
           autoPlay
-          // arrows ={false}
           arrows
           swipeable
           draggable
@@ -135,7 +134,7 @@ export default function MultiImageSlider({
             <div
               key={item.id}
               className="category-card-small mx-2"
-              style={{ width: 210 }}
+              style={{ width: 210 , margin:20 }}
             >
               {item.price ? (
                 <>
@@ -186,9 +185,7 @@ export default function MultiImageSlider({
                         Add to Cart
                       </Button>
                     </>
-                  ) : (
-                    ""
-                  )}
+                  ) :null}
                 </p>
               </div>
             </div>

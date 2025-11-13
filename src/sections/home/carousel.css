@@ -4,10 +4,11 @@
   overflow: hidden;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
   text-align: center;
-  padding-bottom: 10px;
+  /* padding-bottom: 50px; */
   height: 380px;
+  /* border: black; */
 }
 
 .category-card-small:hover {
