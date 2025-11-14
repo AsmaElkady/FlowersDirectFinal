@@ -13,6 +13,7 @@ export default function OrderDetails() {
   const dispatch = useDispatch<AppDispatch>();
   const navigate = useNavigate();
   const user = useSelector((state: RootState) => state.auth.user);
+  const isAdmin = Admin.checkAdmin(user?.email ?? "").status;
 
   const { orderId } = useParams<{ orderId: string }>();
   const { orders, loading } = useSelector(
@@ -44,6 +45,7 @@ export default function OrderDetails() {
       delivered: { bg: "success", text: "Delivered" },
       cancelled: { bg: "danger", text: "Cancelled" },
     };
+
     return badges[status ?? "pending"] || { bg: "secondary", text: "Unknown" };
   };
 
@@ -210,14 +212,16 @@ export default function OrderDetails() {
                     <p className="address-line">{order.address}</p>
                   </div>
                 </div>
-                <div className="address-content mt-2">
-                  <div className="address-icon">
-                    <i className="fa-solid fa-note-sticky"></i>
+                {order.note && order.note.trim() !== "" && (
+                  <div className="address-content mt-2">
+                    <div className="address-icon">
+                      <i className="fa-solid fa-note-sticky"></i>
+                    </div>
+                    <div>
+                      <p className="address-line">{order.note}</p>
+                    </div>
                   </div>
-                  <div>
-                    <p className="address-line">{order.note}</p>
-                  </div>
-                </div>
+                )}
               </div>
 
               <div className="order-section-card">
@@ -244,14 +248,16 @@ export default function OrderDetails() {
             </Col>
           </Row>
 
-          <div className="help-section mt-5 text-center">
-            <p className="text-muted">
-              Need help with your order?{" "}
-              <a href="/contact" className="help-link">
-                Contact Support
-              </a>
-            </p>
-          </div>
+          {!isAdmin && (
+            <div className="help-section mt-5 text-center">
+              <p className="text-muted">
+                Need help with your order?{" "}
+                <a href="/contact" className="help-link">
+                  Contact Support
+                </a>
+              </p>
+            </div>
+          )}
         </Container>
       </div>
     </>

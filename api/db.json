@@ -10,7 +10,7 @@
       "price": 137,
       "rating": 4.5,
       "isFavorite": false,
-      "totalQuantity": 10
+      "totalQuantity": 6
     },
     {
       "id": 2,
@@ -309,7 +309,119 @@
       "favorites": [],
       "orders": [],
       "id": 2
+    },
+    {
+      "email": "aya@gmail.com",
+      "password": "$2a$10$qtYKbtdUZ1NzVnD5vdUfxer07JoptfHdOVTeQPIzW34SVFtHfY0WG",
+      "username": "aya nashat",
+      "cart": [
+        {
+          "cartItems": [],
+          "totalQuantity": 0,
+          "totalPrice": 0
+        }
+      ],
+      "favorites": [],
+      "orders": [],
+      "id": 3
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "items": [
+        {
+          "id": 1,
+          "name": "Red Tulip",
+          "desc": "A beautiful tulip with a natural wood stand.",
+          "image": "https://images.pexels.com/photos/26966084/pexels-photo-26966084.jpeg?_gl=1*n7n83a*_ga*Nzk1MDQ3OTMzLjE3NTY5MzI1NTE.*_ga_8JE65Q40S6*czE3NjEwODA3ODIkbzE2JGcxJHQxNzYxMDgxMzczJGozOSRsMCRoMA..",
+          "color": "red",
+          "category": "Tulips",
+          "price": 137,
+          "rating": 4.5,
+          "isFavorite": false,
+          "totalQuantity": 10,
+          "quantity": 1,
+          "total": 137
+        }
+      ],
+      "totalPrice": 137,
+      "id": "7148bb23-ab7e-4ea2-9bce-2e4b1d68a5ff",
+      "userId": 3,
+      "address": "kafrElsheik",
+      "status": "processing",
+      "note": "ss"
+    },
+    {
+      "items": [
+        {
+          "id": 1,
+          "name": "Red Tulip",
+          "desc": "A beautiful tulip with a natural wood stand.",
+          "image": "https://images.pexels.com/photos/26966084/pexels-photo-26966084.jpeg?_gl=1*n7n83a*_ga*Nzk1MDQ3OTMzLjE3NTY5MzI1NTE.*_ga_8JE65Q40S6*czE3NjEwODA3ODIkbzE2JGcxJHQxNzYxMDgxMzczJGozOSRsMCRoMA..",
+          "color": "red",
+          "category": "Tulips",
+          "price": 137,
+          "rating": 4.5,
+          "isFavorite": false,
+          "totalQuantity": 9,
+          "quantity": 1,
+          "total": 137
+        }
+      ],
+      "totalPrice": 137,
+      "id": "8f53ca6e-4732-4f66-a1b1-70db1dc4fe8e",
+      "userId": 3,
+      "address": "kafrElsheik",
+      "status": "pending",
+      "note": ""
+    },
+    {
+      "items": [
+        {
+          "id": 1,
+          "name": "Red Tulip",
+          "desc": "A beautiful tulip with a natural wood stand.",
+          "image": "https://images.pexels.com/photos/26966084/pexels-photo-26966084.jpeg?_gl=1*n7n83a*_ga*Nzk1MDQ3OTMzLjE3NTY5MzI1NTE.*_ga_8JE65Q40S6*czE3NjEwODA3ODIkbzE2JGcxJHQxNzYxMDgxMzczJGozOSRsMCRoMA..",
+          "color": "red",
+          "category": "Tulips",
+          "price": 137,
+          "rating": 4.5,
+          "isFavorite": false,
+          "totalQuantity": 8,
+          "quantity": 1,
+          "total": 137
+        }
+      ],
+      "totalPrice": 137,
+      "id": "77a61167-e096-4781-aa54-2915343c04ac",
+      "userId": 3,
+      "address": "kafrElsheik",
+      "status": "pending",
+      "note": ""
+    },
+    {
+      "items": [
+        {
+          "id": 1,
+          "name": "Red Tulip",
+          "desc": "A beautiful tulip with a natural wood stand.",
+          "image": "https://images.pexels.com/photos/26966084/pexels-photo-26966084.jpeg?_gl=1*n7n83a*_ga*Nzk1MDQ3OTMzLjE3NTY5MzI1NTE.*_ga_8JE65Q40S6*czE3NjEwODA3ODIkbzE2JGcxJHQxNzYxMDgxMzczJGozOSRsMCRoMA..",
+          "color": "red",
+          "category": "Tulips",
+          "price": 137,
+          "rating": 4.5,
+          "isFavorite": false,
+          "totalQuantity": 7,
+          "quantity": 1,
+          "total": 137
+        }
+      ],
+      "totalPrice": 137,
+      "id": "60dee56c-5919-444d-9e2f-64d2ffe149e2",
+      "userId": 3,
+      "address": "kafrElsheik",
+      "status": "pending",
+      "note": ""
+    }
+  ]
 }

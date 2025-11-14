@@ -35,3 +35,24 @@
     font-size: 1.2rem;
   }
 }
+
+.related-products-grid .carousel-container,
+.related-products-grid .carousel-wrapper,
+.related-products-grid .carousel-inner {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.related-products-grid .carousel-item {
+  flex: 0 0 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+}
+@media (max-width: 768px) {
+  .related-products-grid .carousel-item {
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+  }
+}

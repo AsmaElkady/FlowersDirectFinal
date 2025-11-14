@@ -5,6 +5,9 @@
   --muted: #6b6b6b;
   --shadow: 0 12px 34px rgba(23, 23, 23, 0.08);
 }
+body{
+  background: var(--bg-cream);
+}
 
 .order-details-root {
   background: var(--bg-cream);

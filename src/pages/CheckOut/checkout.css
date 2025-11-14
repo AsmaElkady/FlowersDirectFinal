@@ -6,6 +6,11 @@
   --shadow: 0 12px 34px rgba(23, 23, 23, 0.08);
 }
 
+body{
+  background: var(--bg-cream);
+  padding-bottom: .3%;
+}
+
 .checkout-root {
   background: var(--bg-cream);
   min-height: 100vh;

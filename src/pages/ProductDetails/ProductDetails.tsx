@@ -1,6 +1,4 @@
 import { Container, Row, Col, Button } from "react-bootstrap";
-import leave from "../../assets/Blackgroud img 1.png";
-import leaveRight from "../../assets/Blackgroud img 2.png";
 import axios from "axios";
 import { useQuery } from "@tanstack/react-query";
 import { useNavigate, useParams } from "react-router";
@@ -8,7 +6,6 @@ import "../../style/ProductDetails.css";
 import MultiImageSlider from "../../sections/home/carousel";
 import Swal from "sweetalert2";
 import { addOrUpdateCartApi } from "../../redux/slices/cartApi";
-//import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import type { AppDispatch, RootState } from "../../redux/store";
 import { Admin } from "../../classes/users";
@@ -59,7 +56,6 @@ const ProductDetails: React.FC = () => {
     const token = localStorage.getItem("token");
     if (token) {
       dispatch(addOrUpdateCartApi({ product }));
-      //showNotification(`🛒 ${name} added to cart!`, "primary");
     } else {
       Swal.fire({
         title: "You Should Login first",
@@ -91,16 +87,6 @@ const ProductDetails: React.FC = () => {
         <link rel="canonical" href="http://mysite.com/ProductDetails" />
       </Helmet>
       <div className="product-section position-relative bg-light">
-        <img
-          src={leave}
-          alt="leaf left"
-          className="leaf-left position-absolute"
-        />
-        <img
-          src={leaveRight}
-          alt="leaf right"
-          className="leaf-right position-absolute"
-        />
         <Container className="py-5 mt-5 wrapper">
           <Row className="align-items-center">
             <Col lg={4} md={6} xs={12} className="mb-4 mb-lg-0">
@@ -141,11 +127,13 @@ const ProductDetails: React.FC = () => {
               <p className="text-muted">{product.desc}</p>
             </Col>
           </Row>
-          <MultiImageSlider
-            title="Shop by category"
-            all="ALL CATEGORY"
-            data={relatedProductsData}
-          />
+          <div className="related-products-grid">
+            <MultiImageSlider
+              title=""
+              all="Relates Products"
+              data={relatedProductsData}
+            />
+          </div>
         </Container>
       </div>
     </>
