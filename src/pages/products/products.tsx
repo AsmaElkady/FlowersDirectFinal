@@ -79,7 +79,7 @@ export default function Products() {
       </div>
     );
   if (error)
-    return <h2>Errors....Failed to load products, Please try again later.</h2>;
+    return <h2 style={{paddingTop: "7rem" , textAlign:"center"}}>Error....Failed to load products, Please try again later.</h2>;
 
   return (
     <>

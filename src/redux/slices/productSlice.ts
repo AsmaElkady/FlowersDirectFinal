@@ -15,7 +15,7 @@ export const fetchProducts = createAsyncThunk("products/fetchAll", async () => {
             });
         return res.data;
     } catch (err) {
-        return err;
+        throw err ;
     }
 });
 

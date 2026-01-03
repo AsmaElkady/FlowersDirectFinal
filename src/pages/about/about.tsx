@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet";
 import "../../style/about/about.css";
 import { Accordion, Col, Container, Row } from "react-bootstrap";
+import Smooth from "../../components/animations/smooth";
 
 export default function About() {
   const services = [
@@ -50,9 +51,11 @@ export default function About() {
           About Us
         </div>
       </div>
-      <Container className="mt-5">
-        <Row className="gap-5">
-          <Col>
+      <Container className="mt-2">
+        <Row className="align-items-center gap-5 justify-content-center">
+          <Col md={7}>
+          <Smooth>
+            <div>
             My brother & future sister-in-law were looking for 400 stems of Sonia Dyed Blue dendrobium
             Orchids for their wedding reception. After shopping around, they realized there were no
             wholesaler willing to sell to them and the best priced option was a grocery store. I was
@@ -61,15 +64,19 @@ export default function About() {
             supplier open to the public! I took matters into my own hands & contacted an orchid farm in
             Thailand willing to sell boxes for a fraction of the price! My future sister in law was
             excited to have fresh orchids direct from the farm and my brother was happy to save over a $1000!
-            <div className="mt-4">
+            </div>
+          </Smooth>
+           <Smooth>
+             <div className="mt-4">
               A few weeks later my sister’s friends contacted me about her wedding flowers.
               She was looking for 400 roses and asked if I could help. It was at that time I realized;
               “Why is it so difficult to get quality bulk flowers at wholesale prices?” In 2006,
               Prama International was established and since then, we have been offering Fresh Wholesale
               Flowers & Greens to the public AND industry professionals.
             </div>
+           </Smooth>
           </Col>
-          <Col>
+          <Col md={4}>
             <div className="oval-image-wrapper ms-auto">
               <img src="/img/about/about.png" alt="about" className="oval-image" />
             </div>

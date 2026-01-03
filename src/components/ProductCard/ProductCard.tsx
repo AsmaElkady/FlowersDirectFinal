@@ -158,8 +158,8 @@ export default function ProductCard({ product }: Props) {
               </button>
             </div>
           </div>
-          <Card.Body className="d-flex flex-column justify-content-between align-items-start">
-            <div className="text-start">
+          <Card.Body className="d-flex flex-column justify-content-between align-items-center">
+            <div className="text-center">
               <Card.Title className="fw-semibold">{name}</Card.Title>
               <Card.Subtitle className="text-muted small mb-2">
                 {category}
@@ -174,7 +174,7 @@ export default function ProductCard({ product }: Props) {
                 />
               </Card.Text>
             </div>
-            <div className="mt-3 me-4">
+            <div className="mt-3 me-4 align-self-center m-auto">
               <Button
                 variant="outline-primary"
                 disabled={
